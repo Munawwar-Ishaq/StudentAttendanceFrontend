@@ -10,11 +10,9 @@ import {
 import { Api_Url } from "../config";
 import axios from "axios";
 import Cookies from "js-cookie";
-import { useUserData } from "../context";
 import { useNavigate, Link } from "react-router-dom";
 
 function Register() {
-  const { updateUserData } = useUserData();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [rollNo, setRollNo] = useState("");
