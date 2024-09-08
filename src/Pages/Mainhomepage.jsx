@@ -77,6 +77,7 @@ function Mainhomepage({ url }) {
         setLogoutLoading(false);
       } else {
         Cookies.remove("tkn");
+        updateUserData(null);
         navigate("/login");
       }
       console.log(res.data);
